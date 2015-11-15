@@ -1,0 +1,6 @@
+# English strings go here for Rails i18n
+ja:
+    view:
+        assign_current_date:
+            custom_field_name: "現在の日付を割り当てるカスタムフィールド名"
+  # my_label: "My label"

@@ -1,0 +1,15 @@
+= Redmine assign_current_date plugin
+
+Assign current date to specified custom field on new Issue ticket.
+
+== Installation and Setup
+1. Copy extracted plugin folder to redmine plugin folder
+2. Rename copied plugin folder to "assign_current_date"
+3. Restart your Redmine web servers
+4. [Administration] > [Plugins], click [Configure] on Assign current date plugin, specify custum field name which you want to assign current date
+
+== Usage
+1. When you click [New Issue] menu link, current date will be set to target custom field.
+
+== Special Note
+1. Target custom filed should be Date type
