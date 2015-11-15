@@ -14,7 +14,7 @@ Redmine::Plugin.register :assign_current_date do
   name 'Assign current date plugin'
   author 'team888'
   description 'Assign current date to specified custom field on new Issue ticket.'
-  version '0.2.0'
+  version '0.3.0'
   url 'https://github.com/team888/redmine-assign_current_date-plugin'
   author_url 'https://github.com/team888'
   
