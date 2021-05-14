@@ -8,9 +8,11 @@ module AssignCurrentDate
     # http://www.redmine.org/projects/redmine/wiki/Hooks_List
     def view_issues_new_top(context={})
       issue = context[:issue]
-      cf_name1 = Setting.plugin_assign_current_date['cf_name']
-      cv = object_custom_field(issue, cf_name1)
-      cv.value = Date.today if cv
+      ['cf_name','cf_name2','cf_name3','cf_name4'].each do |k|
+        cf_name = Setting.plugin_assign_current_date[k]
+        cv = object_custom_field(issue, cf_name)
+        cv.value = Date.today if cv
+      end
       return nil
     end
 
